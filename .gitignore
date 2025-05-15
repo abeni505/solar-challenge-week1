@@ -1,0 +1,15 @@
+data/
+*.csv
+.ipynb_checkpoints/
+venv/
+__pycache__/
+data/
+*.csv
+.ipynb_checkpoints/
+venv/
+__pycache__/
+*.csv
+.ipynb_checkpoints/
+.ipynb_checkpoints/
+venv/
+__pycache__/
