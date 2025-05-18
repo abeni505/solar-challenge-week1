@@ -46,8 +46,14 @@ solar-challenge-week1/
 ├── requirements.txt
 ├── README.md
 ├── src/
+│   └── __init__.py
+│   └── data_utils.py
+│   └── eda_utils.py
 ├── notebooks/
 │   ├── __init__.py
+│   └── togo_eda.ipynb
+│   └── sierraleone_eda.ipynb
+│   └── benin_eda.ipynb
 │   └── README.md
 ├── tests/
 │   └── __init__.py
