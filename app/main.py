@@ -1,7 +1,8 @@
 ### app/main.py
 import streamlit as st
 import plotly.express as px
-from app.utils import load_data, get_top_regions
+from utils import load_data, get_top_regions
+
 
 st.title("☀️ Solar Data Dashboard")
 
