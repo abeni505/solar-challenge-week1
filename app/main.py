@@ -11,7 +11,15 @@ country_map = {
 }
 
 selected_country = st.selectbox("Choose a country", list(country_map.keys()))
-df = pd.read_csv(f"data/{country_map[selected_country]}")
+
+# This lets users upload their own benin_clean.csv, sierra_leone_clean.csv
+uploaded_file = st.file_uploader(f"Upload the cleaned CSV for {selected_country}", type='csv')
+
+if uploaded_file is not None:
+    df = pd.read_csv(uploaded_file)
+    st.write(df.head())
+else:
+    st.warning("Please upload a cleaned CSV file to continue.")
 
 st.subheader(f"GHI Over Time in {selected_country}")
 fig = px.line(df, x="Timestamp", y="GHI", title="Global Horizontal Irradiance")
